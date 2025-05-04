@@ -111,7 +111,7 @@ const team = [
     img: "/volvo.jpg",
     initials: "BKP",
     role: "CEO & Principal Geologist",
-    bio: "Mr. Barakeswar Panda has over 25 years of experience in geotechnical consulting and has led major projects across five continents."
+    bio: "Mr. Batakeswar Panda has over 25 years of experience in geotechnical consulting and has led major projects across five continents."
   },
   {
     name: "Mr. Barun Panda",
