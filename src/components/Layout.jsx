@@ -188,7 +188,7 @@ const Layout = ({ children }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="font-bold text-lg mb-4">GEOSTRATA CONSULTANCY</h3>
-              <p className="text-sm">Providing expert geotechnical consulting services to clients worldwide since 2005.</p>
+              <p className="text-sm">Providing expert geotechnical consulting services to clients worldwide since 2025.</p>
             </div>
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
