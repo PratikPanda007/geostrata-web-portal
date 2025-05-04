@@ -1,0 +1,47 @@
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slide 15s infinite;
+  }
+  
+  .carousel-slide {
+    animation: fade 15s infinite;
+    opacity: 0;
+    animation-delay: 0s;
+  }
+  
+  .carousel-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .carousel-slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .carousel-slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  @keyframes fade {
+    0%, 20% {
+      opacity: 1;
+    }
+    25%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+  }
