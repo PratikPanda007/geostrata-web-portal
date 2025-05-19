@@ -205,7 +205,7 @@ const Layout = ({ children }) => {
                 <p>Chandrasekharpur, Patia Gds, Khorda</p>
                 <p>Bhubaneswar,Orissa, India</p>
                 <p>PIN: 751024</p>
-                <p>Email: geostrataconsultants@gmail.com</p>
+                <p>Email: contactus@geostrata.org</p>
                 <p>Phone: (+91) 993 784 4470</p>
               </address>
             </div>
