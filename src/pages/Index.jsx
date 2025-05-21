@@ -202,52 +202,64 @@ const HomePage = () => {
 
 const services = [
   {
-    title: "Statutory and Regulatory Clearances",
-    description: "Assistance in obtaining clearances from forest, environmental, and wildlife departments for project compliance."
+    title: "Forest and Environment Clearances",
+    description: "Expertise in securing statutory approvals under Forest Conservation and Environmental Protection Acts, ensuring regulatory compliance and environmental sustainability."
   },
   {
     title: "Land Acquisition",
-    description: "Support for acquiring land for industrial and mining projects through due diligence and legal processes."
+    description: "End-to-end facilitation of land acquisition processes, including legal due diligence, stakeholder liaison, and documentation for industrial and infrastructure development."
   },
   {
-    title: "DGPS Survey in Mining, Infrastructure Zones,Road,Industries",
-    description: "Accurate topographic and boundary surveys to support mining operations and infrastructure development."
+    title: "Land Management",
+    description: "Professional services covering land mutation, demarcation, dispute resolution, and land use planning for streamlined project support."
   },
   {
     title: "Drone Survey",
-    description: "High-resolution aerial surveys using drones for accurate mapping and monitoring of project areas."
+    description: "High-precision aerial surveys using advanced drone technology for mapping, monitoring, volumetric analysis, and progress tracking."
   },
   {
-    title: "GIS and AutoCAD Remote Sensing Applications",
-    description: "Utilization of GIS and satellite data for spatial analysis, terrain mapping."
+    title: "DGPS Survey",
+    description: "Accurate Differential GPS surveys for boundary demarcation, topographical mapping, and geospatial data collection essential for planning and approvals."
   },
   {
-    title: "Mineral Exploration & Resource Modeling",
-    description: "Expertise in identifying, evaluating, and modeling mineral resources for efficient extraction and planning."
+    title: "Mining Operations",
+    description: "Comprehensive management of mining activities—from resource estimation to excavation—ensuring safety, efficiency, and legal compliance."
   },
   {
     title: "Mining Operations",
     description: "End-to-end solutions for extraction, handling, and logistics of minerals in compliance with regulations."
   },
   {
-    title: "Legal and Regulatory Compliance",
-    description: "Comprehensive management of legal obligations and regulatory requirements across project lifecycles."
+    title: "Mining Exploration & Resource Modelling",
+    description: "Specialized in mineral exploration, core logging, sampling, and 3D resource modelling to evaluate the economic viability of mining projects."
   },
   {
     title: "Geological and Geo-hydrological Assessments",
     description: "Evaluation of geological and groundwater conditions to guide project planning and risk mitigation."
   },
   {
-    title: "Afforestation and Plantation Services",
-    description: "Implementation of ecological restoration and compensatory afforestation for sustainable development."
+    title: "Solar Procurement",
+    description: "Assistance in land sourcing, vendor coordination, and approval processes for the effective procurement and commissioning of solar power projects."
   },
   {
-    title: "Manpower Deployment",
-    description: "Provision of skilled personnel for field operations, surveys, and project implementation support."
+    title: "Project Management",
+    description: "Holistic project management solutions including planning, execution, monitoring, and regulatory coordination to ensure timely and cost-effective delivery."
   },
   {
-    title: "Raising of Minerals",
-    description: "End-to-end solutions for extraction, handling, and logistics of minerals in compliance with regulations."
+    title: "Legal and Statutory Compliance",
+    description: "Advisory and execution support for obtaining statutory permits, handling legal formalities, and ensuring adherence to regulatory frameworks across all operations."
+  },
+  {
+    title: "GIS and AutoCAD Services",
+    description: "Offering GIS mapping, spatial analysis, and AutoCAD-based drafting for accurate planning, visualization, and documentation of projects."
+  },
+  {
+    title: "Deployment of Manpower",
+    description: "Providing skilled and semi-skilled manpower across sectors including mining, survey, forestry, and engineering support for seamless field operations."
+  },
+  {
+    title: "Engineering and Procurement Services",
+    description: "Delivering engineering design solutions and procurement support tailored for industrial, mining, and infrastructure projects to ensure efficient execution."
   }
 ];
 
