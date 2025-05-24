@@ -226,16 +226,8 @@ const services = [
     description: "Comprehensive management of mining activities—from resource estimation to excavation—ensuring safety, efficiency, and legal compliance."
   },
   {
-    title: "Mining Operations",
-    description: "End-to-end solutions for extraction, handling, and logistics of minerals in compliance with regulations."
-  },
-  {
     title: "Mining Exploration & Resource Modelling",
     description: "Specialized in mineral exploration, core logging, sampling, and 3D resource modelling to evaluate the economic viability of mining projects."
-  },
-  {
-    title: "Geological and Geo-hydrological Assessments",
-    description: "Evaluation of geological and groundwater conditions to guide project planning and risk mitigation."
   },
   {
     title: "Solar Procurement",

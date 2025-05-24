@@ -18,6 +18,104 @@ body {
     background: #fafafa;
 }
 
+.section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .message-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      display: flex;
+      gap: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+
+    .avatar-container {
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .avatar-container img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+
+    .quote-icon {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      background-color: #fff;
+      color: #999;
+      border-radius: 50%;
+      font-size: 24px;
+      padding: 5px 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .message-content {
+      flex: 1;
+    }
+
+    .message-content h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: #222;
+    }
+
+    .message-content p {
+      margin: 1rem 0;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .message-footer {
+      margin-top: 1rem;
+    }
+
+    .name {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #000;
+    }
+
+    .designation {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .div__card{
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+          }
+    .div__card_quote{
+                position: absolute;
+                top: -12px;
+                left: -12px;
+                background: #fff;
+                border-radius: 50%;
+                padding: 5px 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                font-size: 24px;
+                color: #999;
+              }
+/* ============================================= [ OLD ] */
+
 blockquote {
     padding: 0;
     margin: 0;

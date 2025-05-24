@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import "./styles/about.css";
+import Leadership from "./Leadership";
 
 const AboutPage = () => {
   return (
@@ -101,14 +102,19 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section class="t-bq-section bg-geostrata-light py-16" id="paul">
+      {/* <section class="t-bq-section bg-geostrata-light py-16" id="paul">
         <div class="t-bq-wrapper t-bq-wrapper-boxed">
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            Who We Are
+          </h2>
           <div class="t-bq-quote t-bq-quote-paul">
             <div class="t-bq-quote-paul-userpic"></div>
             <div class="t-bq-quote-paul-qmark">&#10077;</div>
             <div class="t-bq-quote-paul-pattern"></div>
             <div class="t-bq-quote-paul-base">
-              <h1 className="msg_dir mb-3">Message from the Director</h1>
+              <h1 className="msg_dir mb-3 hidden">
+                Message from the Founder and Manageing Director
+              </h1>
               <blockquote
                 class="t-bq-quote-paul-text"
                 cite="Strugatsky Brothers"
@@ -150,19 +156,94 @@ const AboutPage = () => {
                 <div class="t-bq-quote-paul-meta-info">
                   <div class="t-bq-quote-paul-author">
                     <cite>{team[0].name}</cite>
+                    <div>{team[0].role.join(", ")}</div>
                   </div>
                   <div class="t-bq-quote-paul-source">
-                    {/* <span></span> */}
+                    {/* <span></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="t-bq-wrapper t-bq-wrapper-boxed">
+          <div class="t-bq-quote t-bq-quote-paul">
+            <div class="t-bq-quote-paul-userpic"></div>
+            <div class="t-bq-quote-paul-qmark">&#10077;</div>
+            <div class="t-bq-quote-paul-pattern"></div>
+            <div class="t-bq-quote-paul-base">
+              <h1 className="msg_dir mb-3 hidden">
+                Message from the Co-Founder and Director
+              </h1>
+              <blockquote
+                class="t-bq-quote-paul-text"
+                cite="Strugatsky Brothers"
+              >
+                <p>
+                  A dynamic young entrepreneur and visionary
+                  leader who brings with him a wealth of experience across
+                  India’s leading industrial sectors. Over the years, he has
+                  played pivotal roles in various reputed organizations, Mr.
+                  Panda possesses deep-rooted expertise in mining operations,
+                  land acquisition, forest clearances and high-precision
+                  surveying.
+                </p>
+                <br />
+                <p>
+                  With a proven track record in project management for the
+                  establishment of large-scale industries, including steel
+                  plants and mining projects, he has been instrumental in
+                  driving strategic initiatives from concept to execution. His
+                  exceptional command over regulatory and statutory clearances
+                  has significantly streamlined the approval processes for
+                  complex industrial setups.
+                </p>
+                <br />
+                <p>
+                  Under his leadership, GeoStrata Consultancy is poised to
+                  deliver integrated and impactful solutions, combining
+                  technical excellence with administrative efficiency to empower
+                  India’s industrial growth.
+                </p>
+              </blockquote>
+              <div class="t-bq-quote-paul-meta">
+                <div class="t-bq-quote-paul-meta-info">
+                  <div class="t-bq-quote-paul-author">
+                    <cite>{team[1].name}</cite>
+                    <div>{team[1].role.join(", ")}</div>
+                  </div>
+                  <div class="t-bq-quote-paul-source">
+                    {/* <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section class="t-bq-section bg-geostrata-light py-16" id="paul">
+        <div className="t-bq-wrapper t-bq-wrapper-boxed">
+          <h2 className="text-3xl font-bold mb-12 text-center">Who We Are</h2>
+
+          {team.map((leader, index) => (
+            <Leadership key={index} leader={leader}  />
+          ))}
+        </div>
       </section>
+      {/* <section class="t-bq-section bg-geostrata-light py-16" id="paul">
+        <div style={{ padding: "2rem", backgroundColor: "#f5f5f5" }}>
+          <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+            Leadership Message
+          </h2>
+          {team.map((leader, index) => (
+            <Leadership key={index} leader={leader} />
+          ))}
+        </div>
+      </section> */}
 
       {/* Team Section */}
-      <section className="bg-geostrata-light py-16">
+      <section className="bg-geostrata-light py-16 hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">
             Our Leadership Team
@@ -198,7 +279,7 @@ const AboutPage = () => {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-16">
+      <section className="py-16 hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">
             Our Expertise
@@ -221,10 +302,11 @@ const AboutPage = () => {
 };
 
 // Team Data
+var url__img = "https://cloudwavewebai.blob.core.windows.net/cloudwave/geostrata";
 const team = [
   {
-    name: "Mr. Batakeswar Panda",
-    img: "/volvo.jpg",
+    name: "Mr. B.K Panda",
+    img: url__img + "/geo_bkpanka.jpeg",
     initials: "BKP",
     role: [
       "Director",
@@ -232,15 +314,45 @@ const team = [
       "Coal India Ltd Former CEO, CNUPL",
       "Director, CLUVPL.",
     ],
-    bio: "Mr. Batakeswar Panda has over 25 years of experience in geotechnical consulting and has led major projects across five continents.",
+    bio: "Mr. B.K Panda has over 25 years of experience in geotechnical consulting and has led major projects across five continents.",
+    message: `As a seasoned energy professional with over three decades of experience in the coal, power, and renewable energy sectors, 
+              Mining I have had the privilege of contributing to India’s evolving energy landscape. From leading high-value solar and 
+              thermal projects to forming strategic joint ventures with premier institutions like NTPC and NLCIL, MCL,my journey has 
+              been driven by a single vision—to build a sustainable and future-ready energy ecosystem.<br>
+              GeoStrata Consultancy Private Limited was founded with this very philosophy at its core. Our mission is to provide 
+              integrated, end-to-end consultancy services across land acquisition, mining, geological surveys, forest and environmental 
+              clearances, drone-based survey and mapping, legal compliance, and green energy planning, mining operations .We aim to be 
+              the trusted partner for industries and government agencies navigating the complex terrain of regulatory frameworks, 
+              technical execution, and sustainable development.<br>
+              At GeoStrata, we combine domain expertise with strategic insight—drawing from our deep understanding of 
+              project management, policy formulation, and ground-level execution. We are committed to ensuring timely delivery, ethical 
+              operations, and innovative solutions that align with the future of India’s industrial growth and ecological balance.`,
   },
-  // {
-  //   name: "Mr. Barun Panda",
-  //   img: "/person//person2.jpg'",
-  //   initials: "BP",
-  //   role: ["Chief Scientific Officer"],
-  //   bio: "An internationally recognized expert in structural geology, Mr. Barun Panda academic excellence and practical expertise to complex projects."
-  // },
+  {
+    name: "Mr. Varun Panda",
+    img: url__img + "/geo_vpanda.jpeg",
+    initials: "BP",
+    role: ["Co-Founder", "Director"],
+    bio: "An internationally recognized expert in structural geology, Mr. Barun Panda academic excellence and practical expertise to complex projects.",
+    message: `A dynamic young entrepreneur and visionary
+                  leader who brings with him a wealth of experience across
+                  India’s leading industrial sectors. Over the years, he has
+                  played pivotal roles in various reputed organizations, Mr.
+                  Panda possesses deep-rooted expertise in mining operations,
+                  land acquisition, forest clearances and high-precision
+                  surveying.<br>
+                   With a proven track record in project management for the
+                  establishment of large-scale industries, including steel
+                  plants and mining projects, he has been instrumental in
+                  driving strategic initiatives from concept to execution. His
+                  exceptional command over regulatory and statutory clearances
+                  has significantly streamlined the approval processes for
+                  complex industrial setups.<br>
+                  Under his leadership, GeoStrata Consultancy is poised to
+                  deliver integrated and impactful solutions, combining
+                  technical excellence with administrative efficiency to empower
+                  India’s industrial growth.`,
+  },
 ];
 
 // Expertise Data

@@ -206,7 +206,7 @@ const Layout = ({ children }) => {
                 <p>Bhubaneswar,Orissa, India</p>
                 <p>PIN: 751024</p>
                 <p>Email: contactus@geostrata.org</p>
-                <p>Phone: (+91) 993 784 4470</p>
+                <p>Phone: (+91) 943 887 9514</p>
               </address>
             </div>
           </div>

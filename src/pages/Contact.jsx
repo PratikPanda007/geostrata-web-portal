@@ -181,7 +181,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Contact Details</h3>
                     <p className="text-gray-600">Email: contactus@geostrata.org</p>
-                    <p className="text-gray-600">Phone: (+91) 993 784 4470</p>
+                    <p className="text-gray-600">Phone: (+91) 943 887 9514</p>
                     {/* <p className="text-gray-600">Fax: (555) 123-4568</p> */}
                   </div>
                   
@@ -199,7 +199,7 @@ const ContactPage = () => {
                 <p className="mb-4">
                   For urgent matters requiring immediate attention, please contact our emergency response team:
                 </p>
-                <p className="font-bold">(+91) 993 784 4470</p>
+                <p className="font-bold">(+91) 943 887 9514</p>
                 <p className="text-sm italic mt-2">Available 24/7 for critical situations</p>
               </div>
             </div>
